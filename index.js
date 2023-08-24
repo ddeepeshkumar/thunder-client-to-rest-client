@@ -65,7 +65,7 @@ async function processCollectionFiles() {
       if (request.headers && request.headers.length) {
         request.headers.forEach((header) => {
           if (header.isDisabled) return;
-          requestText += header.name + " " + header.value;
+          requestText += header.name + ": " + header.value;
           requestText += "\n";
         });
       }
